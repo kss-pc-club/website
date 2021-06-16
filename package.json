@@ -35,6 +35,8 @@
     "typescript": "^4.1.3"
   },
   "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "2.3.1"
   },
   "scripts": {
@@ -45,7 +47,13 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "prettier:format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,scss}\"",
-    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,scss}\""
+    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,scss}\"",
+    "husky:prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,scss}": [
+      "prettier --write"
+    ]
   },
   "repository": "https://github.com/kss-pc-club/website",
   "bugs": {
