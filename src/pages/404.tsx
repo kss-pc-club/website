@@ -7,7 +7,7 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
     <React.Fragment>
       <Layout>
-        <SEO title='Top' />
+        <SEO title='404: Not Found' />
         <h1>404 Not Found</h1>
       </Layout>
     </React.Fragment>
