@@ -1,0 +1,53 @@
+{
+  "name": "website",
+  "private": true,
+  "description": "KSS PC Club's Website",
+  "version": "0.1.0",
+  "author": "KSS PC Club <kss-pc-club>",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "kss-pc-club"
+  ],
+  "dependencies": {
+    "gatsby": "^3.7.2",
+    "gatsby-image": "^3.7.1",
+    "gatsby-plugin-advanced-sitemap": "^2.0.0",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-lodash": "^4.7.1",
+    "gatsby-plugin-manifest": "^3.7.1",
+    "gatsby-plugin-offline": "^4.7.1",
+    "gatsby-plugin-react-helmet": "^4.7.1",
+    "gatsby-plugin-robots-txt": "^1.5.5",
+    "gatsby-plugin-sass": "^4.7.1",
+    "gatsby-plugin-sharp": "^3.7.1",
+    "gatsby-plugin-ts-config": "^1.1.5",
+    "gatsby-plugin-typescript": "^3.7.1",
+    "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-transformer-sharp": "^3.7.1",
+    "lodash": "^4.17.20",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "ress": "^4.0.0",
+    "sass": "^1.32.4",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "prettier": "2.3.1"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": "https://github.com/kss-pc-club/website",
+  "bugs": {
+    "url": "https://github.com/kss-pc-club/website/issues"
+  }
+}
