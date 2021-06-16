@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
+import { graphql, useStaticQuery } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import { Helmet } from "react-helmet"
 
 const SEO: React.FC<any> = ({ description, image, title }) => {
   const { pathname } = useLocation()
@@ -23,7 +23,7 @@ const SEO: React.FC<any> = ({ description, image, title }) => {
       }
     `
   );
-  
+
   const {
     defaultTitle,
     titleTemplate,
