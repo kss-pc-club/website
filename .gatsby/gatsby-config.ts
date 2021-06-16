@@ -1,10 +1,10 @@
-const siteTitle = `Koga Secondary School - PC Club`;
-const siteUrl = `https://kss-pc.club`;
-const siteDescription = `KSS PC Club's Website`;
-const backgroundColor = `#09090f`;
-const themeColor = `#15171a`;
-const siteFavicon = `content/assets/favicon.png`;
-const siteDefaultOgpImage = `/images/ogp_default.png`;
+const siteTitle = `Koga Secondary School - PC Club`
+const siteUrl = `https://kss-pc.club`
+const siteDescription = `KSS PC Club's Website`
+const backgroundColor = `#09090f`
+const themeColor = `#15171a`
+const siteFavicon = `content/assets/favicon.png`
+const siteDefaultOgpImage = `/images/ogp_default.png`
 
 const siteMetadata = {
   title: siteTitle,
@@ -20,7 +20,7 @@ const siteMetadata = {
   social: {
     github: `kss-pc-club`,
   },
-};
+}
 
 module.exports = {
   siteMetadata,
@@ -44,14 +44,14 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "@src": "src",
-          "@components": "src/components",
-          "@pages": "src/pages",
-          "@styles": "src/styles",
-          "@utils": "src/utils",
+          '@src': 'src',
+          '@components': 'src/components',
+          '@pages': 'src/pages',
+          '@styles': 'src/styles',
+          '@utils': 'src/utils',
         },
-        extensions: ["js", "jsx", "ts", "tsx"],
-      }
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+      },
     },
     `gatsby-plugin-advanced-sitemap`,
     {

@@ -37,7 +37,5 @@
     "fallbackPolling": "dynamicPriority"
   },
   "exclude": ["node_modules", "public", ".cache"],
-  "include": [
-    "./src/**/*"
-  ]
+  "include": ["./src/**/*"]
 }
