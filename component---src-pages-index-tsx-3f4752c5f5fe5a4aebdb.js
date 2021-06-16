@@ -1,0 +1,2 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[691],{8308:function(e,t,l){"use strict";l.r(t);var n=l(7294),r=l(6722),u=l(9801);t.default=function(e){e.location;return n.createElement(n.Fragment,null,n.createElement(r.Z,null,n.createElement(u.Z,{title:"Top"}),n.createElement("h1",null,"Hello world")))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-3f4752c5f5fe5a4aebdb.js.map

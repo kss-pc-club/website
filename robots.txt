@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kss-pc.club/sitemap.xml
+Host: https://kss-pc.club
