@@ -25,7 +25,6 @@ const siteMetadata = {
 module.exports = {
   siteMetadata,
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -74,6 +73,17 @@ module.exports = {
         theme_color: themeColor,
         display: `minimal-ui`,
         icon: siteFavicon,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          outputStyle: 'compressed',
+        },
+        cssLoaderOptions: {
+          camelCase: false,
+        },
       },
     },
     // `gatsby-plugin-offline`,
