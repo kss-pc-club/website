@@ -2,11 +2,11 @@ import React from 'react'
 
 import '@styles/components/layout.global.scss'
 
-const Layout: React.FC<any> = ({ location, children }) => {
+const Layout: React.FC<any> = (Props) => {
   return (
     <React.Fragment>
       <header>KSS PC Club</header>
-      <main>{children}</main>
+      <main className={Props.styles}>{Props.children}</main>
       <footer>
         <p>
           <nobr>
