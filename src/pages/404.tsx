@@ -1,4 +1,4 @@
-import { PageProps } from 'gatsby'
+import { PageProps, Link } from 'gatsby'
 import React from 'react'
 
 import Layout from '@components/layout'
@@ -16,9 +16,9 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
         <p>
           このページは一時的にアクセスができない状況にあるか、URLが変更・削除された可能性があります。
         </p>
-        <a href='/' className='btn btn-outline-primary'>
+        <Link to='/' className='btn btn-outline-primary'>
           トップページへ
-        </a>
+        </Link>
       </Layout>
     </React.Fragment>
   )
