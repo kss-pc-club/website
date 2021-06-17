@@ -35,6 +35,9 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build
+      - name: Create CNAME
+        run: echo kss-pc.club > CNAME
+        working-directory: public
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
