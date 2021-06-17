@@ -10,7 +10,7 @@ const Layout: React.FC<any> = (Props) => {
       <footer>
         <p>
           <nobr>
-            Copyright &copy; 2021 KSS PC Club <wbr />
+            Copyright &copy; {new Date().getFullYear()} KSS PC Club <wbr />
             All Rights Reserved.
           </nobr>
         </p>
