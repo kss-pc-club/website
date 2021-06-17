@@ -5,9 +5,9 @@ import '@styles/components/layout.scss'
 const Layout: React.FC<any> = ({ location, children }) => {
   return (
     <React.Fragment>
-      <header></header>
+      <header>Header</header>
       <main>{children}</main>
-      <footer></footer>
+      <footer>Footer</footer>
     </React.Fragment>
   )
 }

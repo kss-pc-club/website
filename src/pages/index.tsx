@@ -9,7 +9,7 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
     <React.Fragment>
       <Layout>
         <SEO title='Top' />
-        <h1>Hello world</h1>
+        <h1>Main</h1>
       </Layout>
     </React.Fragment>
   )
