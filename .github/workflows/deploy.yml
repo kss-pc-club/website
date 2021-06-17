@@ -35,9 +35,6 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build
-      - name: Create CNAME
-        run: echo kss-pc.club > CNAME
-        working-directory: public
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
@@ -49,3 +46,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: deploy
+          cname: kss-pc.club
