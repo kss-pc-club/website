@@ -52,7 +52,7 @@
   },
   "lint-staged": {
     "**/*": [
-      "prettier --write"
+      "prettier --write --ignore-unknown"
     ]
   },
   "repository": "https://github.com/kss-pc-club/website",
