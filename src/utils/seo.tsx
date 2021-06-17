@@ -1,8 +1,9 @@
-import { useLocation } from '@reach/router'
 import { graphql, useStaticQuery } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Helmet } from 'react-helmet'
+
+import { useLocation } from '@reach/router'
 
 const SEO: React.FC<any> = ({ description, image, title }) => {
   const { pathname } = useLocation()
