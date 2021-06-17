@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  padding: 0.25em 1em;
+  padding: 0.5em 1em;
   font-size: 1.5em;
   color: var(--bs-white);
   background-color: var(--bs-primary);
@@ -17,8 +17,12 @@ main {
 }
 
 footer {
-  padding: 0.25em 1em;
-  font-size: 1.2em;
+  padding: 0.5em 1em;
   color: var(--bs-white);
   background-color: var(--bs-secondary);
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
 }

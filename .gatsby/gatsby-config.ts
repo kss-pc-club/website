@@ -84,6 +84,8 @@ module.exports = {
         cssLoaderOptions: {
           camelCase: false,
         },
+        sassRuleTest: /\.global\.s(a|c)ss$/,
+        sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
     // `gatsby-plugin-offline`,
