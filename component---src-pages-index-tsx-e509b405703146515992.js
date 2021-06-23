@@ -1,2 +1,0 @@
-(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[691],{6738:function(t,e,n){"use strict";n.r(e);var l=n(7294),u=n(7976),i=n(4938),a=n(3431);e.default=function(t){t.location;return(0,a.tZ)(l.Fragment,null,(0,a.tZ)(u.Z,null,(0,a.tZ)(i.Z,{title:"Top"}),(0,a.tZ)("h1",null,"Main")))}}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-e509b405703146515992.js.map
