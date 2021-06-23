@@ -15,7 +15,6 @@ const Base = styled.div`
 `
 
 const More = styled.div`
-  width: 30px;
   height: 60px;
   display: block;
   position: absolute;
