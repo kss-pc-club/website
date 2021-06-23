@@ -8,7 +8,7 @@ import SEO from '@utils/seo'
 const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
     <React.Fragment>
-      <Layout styles={Styles.main}>
+      <Layout location={location} styles={Styles.main}>
         <SEO title='404 Not Found' />
         <h1>404</h1>
         <strong>Not Found</strong>
