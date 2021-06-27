@@ -8,7 +8,7 @@ const Base = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  font-size: 6em;
+  font-size: min(12vw, 6em);
   line-height: 1.1em;
   justify-content: center;
   align-items: center;
