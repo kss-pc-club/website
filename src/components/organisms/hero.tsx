@@ -1,5 +1,6 @@
 import React from 'react'
 
+import ScrollButton from '@components/molecules/scroll-button'
 import styled from '@emotion/styled'
 
 const Base = styled.div`
@@ -14,16 +15,6 @@ const Base = styled.div`
   padding: 10px 0px;
 `
 
-const More = styled.div`
-  height: 60px;
-  display: block;
-  position: absolute;
-  bottom: 30px;
-  text-align: center;
-  font-size: 0.3em;
-  cursor: pointer;
-`
-
 const Hero: React.FC<any> = () => {
   return (
     <React.Fragment>
@@ -31,9 +22,7 @@ const Hero: React.FC<any> = () => {
         <div>
           <p>KSS PC Club</p>
         </div>
-        <More>
-          <p>MORE</p>
-        </More>
+        <ScrollButton />
       </Base>
     </React.Fragment>
   )
