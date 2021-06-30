@@ -6,7 +6,9 @@
   }
 
   p#path {
+    max-width: 100%;
     margin: 1em;
     font-size: 1.2em;
+    overflow-wrap: break-word;
   }
 }
