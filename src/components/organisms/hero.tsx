@@ -9,7 +9,7 @@ const Base = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 1rem);
   padding: 10px 0px;
   font-size: min(12vw, 6em);
   line-height: 1.1em;
