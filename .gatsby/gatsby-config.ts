@@ -32,15 +32,20 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-fontawesome-css`,
-    /*
+    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `src/images`,
+        name: `articles`,
+        path: `content/articles`,
       },
     },
-    */
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-prismjs`],
+      },
+    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -90,6 +95,5 @@ module.exports = {
         sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
-    // `gatsby-plugin-offline`,
   ],
 }

@@ -1,0 +1,54 @@
+.main {
+  p#date {
+    text-align: right;
+  }
+
+  .footer_btn {
+    margin-right: 8px;
+  }
+
+  .article {
+    max-width: 100%;
+    overflow-wrap: break-word;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .highlight {
+      margin: 0.7em 0;
+      text-align: left;
+    }
+
+    blockquote {
+      padding-left: 16px;
+      margin-bottom: 16px;
+      color: #6a737d;
+      border-left: 2px solid #959da5;
+    }
+
+    ul,
+    ol {
+      padding-left: 32px;
+      margin-bottom: 16px;
+    }
+
+    li ul,
+    li ol {
+      padding-left: 16px;
+      margin-bottom: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+
+      th,
+      td {
+        padding: 4px;
+        border: 1px solid var(--bs-gray);
+      }
+    }
+  }
+}
+
+@import url('https://unpkg.com/primer/build/build.css');
