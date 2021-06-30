@@ -1,5 +1,6 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
+import { Breadcrumb } from 'react-bootstrap'
 
 import Layout from '@components/layout'
 import * as Styles from '@styles/pages/MarkdownRemark.module.scss'
@@ -18,6 +19,11 @@ export default function Template({ data }: any) {
       <Layout location={location} styles={Styles.main}>
         <SEO title={frontmatter.title} description={frontmatter.description} />
         <h1>{frontmatter.title}</h1>
+        <Breadcrumb>
+          <Breadcrumb.Item href='/'>トップページ</Breadcrumb.Item>
+          <Breadcrumb.Item href='/articles/'>投稿記事一覧</Breadcrumb.Item>
+          <Breadcrumb.Item active>この記事</Breadcrumb.Item>
+        </Breadcrumb>
         <p id={Styles.date}>
           {frontmatter.date} 公開 ・ {frontmatter.last_update} 更新
         </p>

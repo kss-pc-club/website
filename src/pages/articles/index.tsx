@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Breadcrumb, Card } from 'react-bootstrap'
 
 import Layout from '@components/layout'
 import * as Styles from '@styles/pages/articles/index.module.scss'
@@ -39,6 +39,12 @@ export default ({
     <React.Fragment>
       <Layout location={location}>
         <SEO title='投稿記事一覧' />
+        <h1>投稿記事一覧</h1>
+        <Breadcrumb>
+          <Breadcrumb.Item href='/'>トップページ</Breadcrumb.Item>
+          <Breadcrumb.Item active>投稿記事一覧</Breadcrumb.Item>
+        </Breadcrumb>
+        <hr />
         {Posts}
       </Layout>
     </React.Fragment>
