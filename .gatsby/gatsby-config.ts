@@ -32,6 +32,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-catch-links`,
     // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,

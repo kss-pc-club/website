@@ -20,6 +20,7 @@
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-catch-links": "^3.8.0",
     "gatsby-plugin-emotion": "^6.8.0",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
     "gatsby-plugin-lodash": "^4.8.0",
