@@ -12,7 +12,7 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
         <SEO title='404 Not Found' />
         <h1>404</h1>
         <strong>Not Found</strong>
-        <p id='path'>{location.pathname}</p>
+        <p id={Styles.path}>{location.pathname}</p>
         <p>
           このページは一時的にアクセスができない状況にあるか、URLが変更・削除された可能性があります。
         </p>
