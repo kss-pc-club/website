@@ -7,6 +7,8 @@ import SEO from '@utils/seo'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import 'prismjs/themes/prism.css'
 
+;<link rel='stylesheet' href='https://unpkg.com/primer/build/build.css' />
+
 export default function Template({ data }: any) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
