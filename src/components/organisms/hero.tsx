@@ -5,14 +5,14 @@ import styled from '@emotion/styled'
 
 const Base = styled.div`
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  display: flex;
+  padding: 10px 0px;
   font-size: min(12vw, 6em);
   line-height: 1.1em;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0px;
 `
 
 const Hero: React.FC<any> = () => {

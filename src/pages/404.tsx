@@ -1,4 +1,4 @@
-import { PageProps, Link } from 'gatsby'
+import { Link, PageProps } from 'gatsby'
 import React from 'react'
 
 import Layout from '@components/layout'

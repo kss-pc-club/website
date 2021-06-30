@@ -3,8 +3,8 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 const Base = styled.footer`
-  margin-top: auto;
   padding: 0.5em 1em;
+  margin-top: auto;
   color: var(--bs-white);
   background-color: var(--bs-secondary);
 

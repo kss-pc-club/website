@@ -18,24 +18,25 @@ const Animation = keyframes`
 `
 
 const ScrollButton = styled.span`
-  width: 30px;
-  height: 60px;
-  display: block;
   position: absolute;
   bottom: 20px;
+  display: block;
+  width: 30px;
+  height: 60px;
+  color: #000;
   text-align: center;
-  color: black;
   cursor: pointer;
+
   &::after {
-    content: '';
     position: absolute;
     top: 0px;
     left: 50%;
     width: ${ArrowSize}px;
     height: ${ArrowSize}px;
     margin-left: ${-ArrowSize / 2}px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
+    content: '';
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
     transform: rotate(-45deg) translate(0, 0);
     animation: ${Animation} 1.5s infinite;
   }
