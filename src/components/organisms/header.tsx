@@ -10,12 +10,10 @@ const Base = styled.header`
   background-color: var(--bs-primary);
 `
 
-const Header: React.FC<any> = () => {
+export default () => {
   return (
     <React.Fragment>
       <Base>KSS PC Club</Base>
     </React.Fragment>
   )
 }
-
-export default Header

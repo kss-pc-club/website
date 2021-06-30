@@ -14,7 +14,7 @@ const Base = styled.footer`
   }
 `
 
-const Footer: React.FC<any> = () => {
+export default () => {
   return (
     <React.Fragment>
       <Base>
@@ -28,5 +28,3 @@ const Footer: React.FC<any> = () => {
     </React.Fragment>
   )
 }
-
-export default Footer

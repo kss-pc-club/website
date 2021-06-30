@@ -1,11 +1,10 @@
-import { PageProps } from 'gatsby'
 import React from 'react'
 
 import Layout from '@components/layout'
 import Hero from '@components/organisms/hero'
 import SEO from '@utils/seo'
 
-const TopPage: React.FC<PageProps> = ({ location }) => {
+export default ({ location }) => {
   return (
     <React.Fragment>
       <Layout location={location}>
@@ -16,5 +15,3 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
     </React.Fragment>
   )
 }
-
-export default TopPage

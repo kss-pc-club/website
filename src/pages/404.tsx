@@ -1,11 +1,11 @@
-import { Link, PageProps } from 'gatsby'
+import { Link } from 'gatsby'
 import React from 'react'
 
 import Layout from '@components/layout'
 import * as Styles from '@styles/pages/404.module.scss'
 import SEO from '@utils/seo'
 
-const TopPage: React.FC<PageProps> = ({ location }) => {
+export default ({ location }) => {
   return (
     <React.Fragment>
       <Layout location={location} styles={Styles.main}>
@@ -23,5 +23,3 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
     </React.Fragment>
   )
 }
-
-export default TopPage

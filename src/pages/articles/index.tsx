@@ -27,11 +27,11 @@ const PostLink = ({ post }: any) => (
 )
 
 export default ({
+  location,
   data: {
     allMarkdownRemark: { edges },
   },
-  location,
-}: any) => {
+}) => {
   const Posts = edges
     .filter((edge: any) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map((edge: any) => <PostLink key={edge.node.id} post={edge.node} />)
