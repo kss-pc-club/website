@@ -14,11 +14,12 @@ export default function Template({ data }: any) {
   return (
     <React.Fragment>
       <Layout location={location} styles={Styles.main}>
-        <SEO title={frontmatter.title} />
+        <SEO title={frontmatter.title} description={frontmatter.description} />
         <h1>{frontmatter.title}</h1>
         <p id={Styles.date}>
-          公開日: {frontmatter.date} | 最終更新日: {frontmatter.last_update}
+          {frontmatter.date} 公開 ・ {frontmatter.last_update} 更新
         </p>
+        <p id={Styles.description}>{frontmatter.description}</p>
         <hr />
         <div
           className={Styles.article}
@@ -32,10 +33,10 @@ export default function Template({ data }: any) {
           トップページへ
         </Link>
         <Link
-          to='/'
+          to='/articles/'
           className={`btn btn-outline-secondary ${Styles.footer_btn}`}
         >
-          トップページへ
+          記事一覧ページへ
         </Link>
       </Layout>
     </React.Fragment>
@@ -51,6 +52,7 @@ export const pageQuery = graphql`
         last_update(formatString: "YYYY.MM.DD")
         slug
         title
+        description
       }
     }
   }
