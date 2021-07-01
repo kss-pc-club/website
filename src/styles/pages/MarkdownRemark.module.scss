@@ -52,5 +52,9 @@
         border: 1px solid var(--bs-gray);
       }
     }
+
+    img {
+      max-width: 100%;
+    }
   }
 }
