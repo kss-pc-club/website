@@ -45,7 +45,7 @@ export default ({
           <Breadcrumb.Item active>投稿記事一覧</Breadcrumb.Item>
         </Breadcrumb>
         <hr />
-        {Posts}
+        <div className={Styles.cardContainer}>{Posts}</div>
       </Layout>
     </React.Fragment>
   )
