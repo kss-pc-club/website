@@ -1,4 +1,4 @@
-# Articles
+# content/articles
 
 このディレクトリには、Markdown で記述された記事が格納されます。
 
