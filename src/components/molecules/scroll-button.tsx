@@ -17,7 +17,7 @@ const Animation = keyframes`
   }
 `
 
-export default styled.span`
+const ScrollButton_elem = styled.span`
   position: absolute;
   bottom: 20px;
   display: block;
@@ -41,3 +41,5 @@ export default styled.span`
     animation: ${Animation} 1.5s infinite;
   }
 `
+
+export default ScrollButton_elem

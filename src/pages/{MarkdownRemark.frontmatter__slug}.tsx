@@ -8,7 +8,7 @@ import SEO from '@utils/seo'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import 'prismjs/themes/prism.css'
 
-export default ({ location, data }) => {
+const MarkdownArticle_template: React.FC<any> = ({ location, data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
@@ -48,6 +48,8 @@ export default ({ location, data }) => {
     </React.Fragment>
   )
 }
+
+export default MarkdownArticle_template
 
 export const pageQuery = graphql`
   query ($id: String!) {

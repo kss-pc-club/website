@@ -26,7 +26,7 @@ const PostLink = ({ post }: any) => (
   </Card>
 )
 
-export default ({
+const Articles_Index_page: React.FC<any> = ({
   location,
   data: {
     allMarkdownRemark: { edges },
@@ -50,6 +50,8 @@ export default ({
     </React.Fragment>
   )
 }
+
+export default Articles_Index_page
 
 export const pageQuery = graphql`
   query {

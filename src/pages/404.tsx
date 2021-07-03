@@ -1,11 +1,11 @@
-import { Link } from 'gatsby'
+import { Link, PageProps } from 'gatsby'
 import React from 'react'
 
 import Layout from '@components/layout'
 import * as Styles from '@styles/pages/404.module.scss'
 import SEO from '@utils/seo'
 
-export default ({ location }) => {
+const Error404_page: React.FC<PageProps> = ({ location }) => {
   return (
     <React.Fragment>
       <Layout location={location} styles={Styles.main}>
@@ -23,3 +23,5 @@ export default ({ location }) => {
     </React.Fragment>
   )
 }
+
+export default Error404_page

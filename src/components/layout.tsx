@@ -4,7 +4,7 @@ import Footer from '@components/organisms/footer'
 import Header from '@components/organisms/header'
 import '@styles/components/layout.global.scss'
 
-export default (Props) => {
+const Layout: React.FC<any> = (Props) => {
   const isRootPath = Props.location.pathname === `${__PATH_PREFIX__}/`
   return (
     <React.Fragment>
@@ -14,3 +14,5 @@ export default (Props) => {
     </React.Fragment>
   )
 }
+
+export default Layout

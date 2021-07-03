@@ -15,7 +15,7 @@ const Base = styled.div`
   line-height: 1.1em;
 `
 
-export default () => {
+const Hero_elem = () => {
   return (
     <React.Fragment>
       <Base>
@@ -27,3 +27,5 @@ export default () => {
     </React.Fragment>
   )
 }
+
+export default Hero_elem

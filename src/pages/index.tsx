@@ -1,10 +1,11 @@
+import { PageProps } from 'gatsby'
 import React from 'react'
 
 import Layout from '@components/layout'
 import Hero from '@components/organisms/hero'
 import SEO from '@utils/seo'
 
-export default ({ location }) => {
+const RootIndex_page: React.FC<PageProps> = ({ location }) => {
   return (
     <React.Fragment>
       <Layout location={location}>
@@ -15,3 +16,5 @@ export default ({ location }) => {
     </React.Fragment>
   )
 }
+
+export default RootIndex_page
