@@ -22,6 +22,7 @@
     "assumeChangesOnlyAffectDirectDependencies": true,
 
     "baseUrl": ".",
+    "types": ["@emotion/react/types/css-prop"],
     "paths": {
       "src/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
