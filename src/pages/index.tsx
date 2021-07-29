@@ -13,10 +13,10 @@ const HeadingLineWidth = 60
 const Heading = styled.h1`
   position: relative;
   display: inline-block;
-  font-size: 2.3em;
+  font-size: 1.8rem;
   font-weight: 500;
   padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   &::after {
     content: '';
     position: absolute;
