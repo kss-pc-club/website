@@ -1,6 +1,10 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
 
+import Slider, { Settings } from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import Container from '@components/atoms/container'
 import Layout from '@components/layout'
 import Hero from '@components/organisms/hero'
@@ -31,6 +35,15 @@ const Heading = styled.h1`
 `
 
 const RootIndex_page: React.FC<PageProps> = ({ location }) => {
+  const settings: Settings = {
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  }
+
   return (
     <React.Fragment>
       <Layout location={location}>
@@ -54,6 +67,31 @@ const RootIndex_page: React.FC<PageProps> = ({ location }) => {
                 文化祭では、各個人が作ったゲームなどの作品を展示しています。
               </p>
             </div>
+          </Container>
+        </section>
+        <section id='works'>
+          <Container padding='80px 4vw' align='center'>
+            <Heading>Projects & Works</Heading>
+            <Slider {...settings}>
+              <div>
+                <h3>1</h3>
+              </div>
+              <div>
+                <h3>2</h3>
+              </div>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
+              <div>
+                <h3>6</h3>
+              </div>
+            </Slider>
           </Container>
         </section>
       </Layout>
