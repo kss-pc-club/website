@@ -1,9 +1,6 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-
-import Slider, { Settings } from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Slider, { Settings } from 'react-slick'
 
 import Container from '@components/atoms/container'
 import Layout from '@components/layout'
@@ -11,6 +8,8 @@ import Hero from '@components/organisms/hero'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import SEO from '@utils/seo'
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
 
 const HeadingLineWidth = 60
 
