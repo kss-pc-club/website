@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby'
 
 const siteTitle = `Koga Secondary School - PC Club`
 const siteUrl = `https://kss-pc.club`
