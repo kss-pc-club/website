@@ -1,3 +1,5 @@
+import type { GatsbyConfig } from "gatsby"
+
 const siteTitle = `Koga Secondary School - PC Club`
 const siteUrl = `https://kss-pc.club`
 const siteDescription = `KSS PC Club's Website`
@@ -22,7 +24,7 @@ const siteMetadata = {
   },
 }
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata,
   plugins: [
     `gatsby-plugin-emotion`,
@@ -33,6 +35,7 @@ module.exports = {
     `gatsby-plugin-lodash`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-root-import`,
     // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -98,3 +101,5 @@ module.exports = {
     },
   ],
 }
+
+export default config

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ScrollButton from '@components/molecules/scroll-button'
+import ScrollButton from 'src/components/molecules/scroll-button'
 import styled from '@emotion/styled'
 
 const Base = styled.div`
