@@ -14,7 +14,7 @@ https://kss-pc.club/
 2. このリポジトリを Clone します。
 3. `yarn install --frozen-lockfile` します。
 4. `yarn husky:prepare` でコミット前の自動整形等の準備をします。
-5. `yarn start` でローカルサーバー（http://localhost:8000/）を立ち上げます。
+5. `yarn start` でローカルサーバー（http://localhost:8000/ ）を立ち上げます。
 
 ### コード整形ツールについて
 
