@@ -1,13 +1,8 @@
 import React from 'react'
-import SweetScroll from 'sweet-scroll'
 
 import Footer from '@components/organisms/footer'
 import Header from '@components/organisms/header'
-import '@styles/components/layout.global.scss'
-
-new SweetScroll({
-  trigger: "a.sweet-scroll[href^='#']",
-})
+import 'src/styles/components/layout.global.scss'
 
 const Layout: React.FC<any> = (Props) => {
   const isRootPath = Props.location.pathname === `${__PATH_PREFIX__}/`

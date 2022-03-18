@@ -19,10 +19,10 @@ const Footer_elem = () => {
     <React.Fragment>
       <Base>
         <p>
-          <nobr>
+          <small>
             Copyright &copy; {new Date().getFullYear()} KSS PC Club <wbr />
             All Rights Reserved.
-          </nobr>
+          </small>
         </p>
       </Base>
     </React.Fragment>
