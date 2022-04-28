@@ -2,6 +2,11 @@ import { useStaticQuery, graphql } from 'gatsby'
 import React from 'react'
 
 import { css } from '@emotion/react'
+import styled from '@emotion/styled'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Anchor from 'src/components/atoms/anchor'
 import Container from 'src/components/atoms/container'
 import SectionTitle from 'src/components/atoms/section-title'
 
@@ -12,6 +17,7 @@ const Content: React.FC = () => {
         siteMetadata {
           social {
             github
+            youtube
           }
         }
       }
@@ -19,6 +25,24 @@ const Content: React.FC = () => {
   `)
 
   const { social } = data.site.siteMetadata
+
+  const Styled = {
+    Social: styled.div`
+      font-size: 30px;
+      margin-top: 1rem;
+      > a {
+        color: #212529;
+        text-decoration: none;
+        margin-right: 0.7rem;
+        margin-left: 0.7rem;
+        transition: 0.2s;
+        &:hover {
+          color: gray;
+          transition: 0.2s;
+        }
+      }
+    `,
+  }
 
   return (
     <section id='about-us'>
@@ -39,6 +63,20 @@ const Content: React.FC = () => {
             文化祭では、各個人が作ったゲームなどの作品を展示しています。
           </p>
         </div>
+        <Styled.Social>
+          <Anchor
+            to={`https://github.com/${social.github}`}
+            removeExternalIcon={true}
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </Anchor>
+          <Anchor
+            to={`https://youtube.com/channel/${social.youtube}`}
+            removeExternalIcon={true}
+          >
+            <FontAwesomeIcon icon={faYoutube} />
+          </Anchor>
+        </Styled.Social>
       </Container>
     </section>
   )
