@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 type AnchorProps = {
   to: string
   target?: string
+  removeExternalIcon?: boolean
   children?: React.ReactNode
 }
 
@@ -18,15 +19,19 @@ const Anchor: React.VFC<AnchorProps> = (props) => {
     <React.Fragment>
       {isExternal ? (
         <a href={props.to} target='_blank' rel='noopener noreferrer'>
-          <FontAwesomeIcon
-            icon={faExternalLinkAlt}
-            css={css`
-              font-size: 0.8em;
-              margin-right: 0.4em;
-              margin-bottom: 0.05em;
-            `}
-          />
           {props.children}
+          {props.removeExternalIcon ? (
+            <></>
+          ) : (
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              css={css`
+                font-size: 0.8em;
+                margin-left: 0.4em;
+                vertical-align: 0%;
+              `}
+            />
+          )}
         </a>
       ) : (
         <Link to={props.to} target={props.target}>
