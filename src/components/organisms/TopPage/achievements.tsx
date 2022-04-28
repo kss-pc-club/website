@@ -3,7 +3,7 @@ import React from 'react'
 import Container from 'src/components/atoms/container'
 import SectionTitle from 'src/components/atoms/section-title'
 
-const Content: React.FC = () => {
+const Content: React.VFC = () => {
   return (
     <section id='achievements'>
       <Container padding='120px 4vw' align='center'>

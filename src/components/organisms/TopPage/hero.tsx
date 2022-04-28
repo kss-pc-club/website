@@ -18,17 +18,15 @@ const Base = styled.section`
   line-height: 1.1em;
 `
 
-const Hero_elem = () => {
-  return (
-    <React.Fragment>
-      <Base>
-        <div>
-          <p>KSS PC Club</p>
-        </div>
-        <ScrollButton />
-      </Base>
-    </React.Fragment>
-  )
-}
+const Hero: React.VFC = () => (
+  <React.Fragment>
+    <Base>
+      <div>
+        <p>KSS PC Club</p>
+      </div>
+      <ScrollButton />
+    </Base>
+  </React.Fragment>
+)
 
-export default Hero_elem
+export default Hero

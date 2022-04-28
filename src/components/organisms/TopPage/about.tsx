@@ -10,7 +10,7 @@ import Anchor from 'src/components/atoms/anchor'
 import Container from 'src/components/atoms/container'
 import SectionTitle from 'src/components/atoms/section-title'
 
-const Content: React.FC = () => {
+const Content: React.VFC = () => {
   const data = useStaticQuery(graphql`
     query AboutUs {
       site {
