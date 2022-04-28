@@ -30,6 +30,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-lodash`,
@@ -84,19 +85,6 @@ const config: GatsbyConfig = {
         theme_color: themeColor,
         display: `minimal-ui`,
         icon: siteFavicon,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        sassOptions: {
-          outputStyle: 'compressed',
-        },
-        cssLoaderOptions: {
-          camelCase: false,
-        },
-        sassRuleTest: /\.global\.s(a|c)ss$/,
-        sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
   ],
