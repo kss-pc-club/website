@@ -23,7 +23,7 @@ const ScrollButton_elem = styled.span`
   display: block;
   width: 30px;
   height: 60px;
-  color: #000;
+  color: #fff;
   text-align: center;
   cursor: pointer;
 
@@ -35,8 +35,8 @@ const ScrollButton_elem = styled.span`
     height: ${ArrowSize}px;
     margin-left: ${-ArrowSize / 2}px;
     content: '';
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
     transform: rotate(-45deg) translate(0, 0);
     animation: ${Animation} 1.5s infinite;
   }
