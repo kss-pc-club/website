@@ -52,19 +52,6 @@ const config: GatsbyConfig = {
         plugins: [`gatsby-remark-prismjs`, `gatsby-remark-external-links`],
       },
     },
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '@src': 'src',
-          '@components': 'src/components',
-          '@pages': 'src/pages',
-          '@styles': 'src/styles',
-          '@utils': 'src/utils',
-        },
-        extensions: ['js', 'jsx', 'ts', 'tsx'],
-      },
-    },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
