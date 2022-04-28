@@ -11,7 +11,7 @@ type SectionTitleProps = {
 
 const SectionTitle: React.VFC<SectionTitleProps> = (props) => {
   const Styled = styled.div`
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: ${props.subColor || '#212529'};
     margin-bottom: 1.5rem;
     h2 {
@@ -19,7 +19,7 @@ const SectionTitle: React.VFC<SectionTitleProps> = (props) => {
       position: relative;
       display: block;
       padding-bottom: 0.8em;
-      margin-bottom: 0.4em;
+      margin-bottom: 0.3em;
       font-weight: 500;
       &::after {
         content: '';
