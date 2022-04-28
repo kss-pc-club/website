@@ -1,9 +1,9 @@
 import { Link, PageProps } from 'gatsby'
 import React from 'react'
 
-import Layout from '@components/layout'
-import * as Styles from '@styles/pages/404.module.scss'
-import SEO from '@utils/seo'
+import Layout from 'src/components/layout'
+import * as Styles from 'src/styles/pages/404.module.scss'
+import SEO from 'src/utils/seo'
 
 const Error404_page: React.FC<PageProps> = ({ location }) => {
   return (

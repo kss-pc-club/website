@@ -1,7 +1,7 @@
 import React from 'react'
 
-import ScrollButton from '@components/molecules/scroll-button'
 import styled from '@emotion/styled'
+import ScrollButton from 'src/components/molecules/scroll-button'
 
 const Base = styled.section`
   background: #525e88 url('images/cover.jpg') no-repeat center center;

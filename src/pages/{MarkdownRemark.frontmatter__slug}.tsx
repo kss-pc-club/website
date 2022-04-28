@@ -2,11 +2,11 @@ import { graphql, Link } from 'gatsby'
 import React from 'react'
 import { Breadcrumb } from 'react-bootstrap'
 
-import Layout from '@components/layout'
-import * as Styles from '@styles/pages/MarkdownRemark.module.scss'
-import SEO from '@utils/seo'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import 'prismjs/themes/prism.css'
+import Layout from 'src/components/layout'
+import * as Styles from 'src/styles/pages/MarkdownRemark.module.scss'
+import SEO from 'src/utils/seo'
 
 const MarkdownArticle_template: React.FC<any> = ({ location, data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data

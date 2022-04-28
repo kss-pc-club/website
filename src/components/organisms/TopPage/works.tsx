@@ -1,10 +1,10 @@
 import React from 'react'
 import Slider, { Settings } from 'react-slick'
 
-import Container from '@components/atoms/container'
 import { css } from '@emotion/react'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
+import Container from 'src/components/atoms/container'
 import SectionTitle from 'src/components/atoms/section-title'
 
 const Content: React.FC = () => {
