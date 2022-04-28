@@ -21,6 +21,7 @@ const siteMetadata = {
   basePath: `/`,
   social: {
     github: `kss-pc-club`,
+    youtube: `UC60LrAyqIHUkqCmzhN2N4Rg`,
   },
 }
 
