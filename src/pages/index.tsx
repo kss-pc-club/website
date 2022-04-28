@@ -3,6 +3,7 @@ import React from 'react'
 
 import Layout from 'src/components/layout'
 import About from 'src/components/organisms/TopPage/about'
+import Achievements from 'src/components/organisms/TopPage/achievements'
 import Contact from 'src/components/organisms/TopPage/contact'
 import Hero from 'src/components/organisms/TopPage/hero'
 import Join from 'src/components/organisms/TopPage/join'
@@ -18,6 +19,7 @@ const RootIndex_page: React.FC<PageProps> = ({ location }) => (
         <Hero />
         <About />
         <Works />
+        <Achievements />
         <Posts />
         <Join />
         <Contact />
