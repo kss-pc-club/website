@@ -10,22 +10,22 @@ import SEO from 'src/utils/seo'
 
 const MarkdownArticle_template: React.FC<any> = ({ location, data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { fields, html } = markdownRemark
 
   return (
     <React.Fragment>
       <Layout location={location} styles={Styles.main}>
-        <SEO title={frontmatter.title} description={frontmatter.description} />
-        <h1>{frontmatter.title}</h1>
+        <SEO title={fields.title} description={fields.description} />
+        <h1>{fields.title}</h1>
         <Breadcrumb>
           <Breadcrumb.Item href='/'>トップページ</Breadcrumb.Item>
           <Breadcrumb.Item href='/articles/'>投稿記事一覧</Breadcrumb.Item>
           <Breadcrumb.Item active>この記事</Breadcrumb.Item>
         </Breadcrumb>
         <p id={Styles.date}>
-          {frontmatter.date} 公開 ・ {frontmatter.last_update} 更新
+          {fields.date} 公開 ・ {fields.last_update} 更新
         </p>
-        <p id={Styles.description}>{frontmatter.description}</p>
+        <p id={Styles.description}>{fields.description}</p>
         <hr />
         <div
           className={Styles.article}
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter {
+      fields {
         date(formatString: "YYYY.MM.DD")
         last_update(formatString: "YYYY.MM.DD")
         slug

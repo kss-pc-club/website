@@ -1,7 +1,6 @@
 ---
-slug: /articles/welcome-to-kss-pc-club
 date: 2021-07-01
-last_update: 2021-07-01
+last_update: 2022-05-01
 title: Welcome to KSS PC Club!
 description: Slackに入ったら初めに読んでほしい文書
 ---

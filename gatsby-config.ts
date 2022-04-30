@@ -39,18 +39,42 @@ const config: GatsbyConfig = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-root-import`,
+    `gatsby-transformer-json`,
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `achievements`,
+        path: `content/achievements`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `articles`,
         path: `content/articles`,
+        ignore: [`**/README.md`],
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-external-links`],
+        plugins: [
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-external-links`,
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 650,
+              quality: 90,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+          `gatsby-remark-katex`,
+        ],
       },
     },
     `gatsby-plugin-advanced-sitemap`,

@@ -9,17 +9,14 @@ import SEO from 'src/utils/seo'
 const PostLink = ({ post }: any) => (
   <Card className={Styles.card}>
     <Card.Body>
-      <Card.Title className={Styles.h5}>{post.frontmatter.title}</Card.Title>
+      <Card.Title className={Styles.h5}>{post.fields.title}</Card.Title>
       <Card.Subtitle className={Styles.h6}>
-        {post.frontmatter.date} 公開 ・ {post.frontmatter.last_update} 更新
+        {post.fields.date} 公開 ・ {post.fields.last_update} 更新
       </Card.Subtitle>
       <Card.Text className={Styles.cardDescription}>
-        {post.frontmatter.description}
+        {post.fields.description}
       </Card.Text>
-      <Card.Link
-        className='btn btn-outline-primary'
-        href={post.frontmatter.slug}
-      >
+      <Card.Link className='btn btn-outline-primary' href={post.fields.slug}>
         記事を読む
       </Card.Link>
     </Card.Body>
@@ -33,7 +30,7 @@ const Articles_Index_page: React.FC<any> = ({
   },
 }) => {
   const Posts = edges
-    .filter((edge: any) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .filter((edge: any) => !!edge.node.fields.date) // You can filter your posts based on some criteria
     .map((edge: any) => <PostLink key={edge.node.id} post={edge.node} />)
   return (
     <React.Fragment>
@@ -60,10 +57,10 @@ export const pageQuery = graphql`
         node {
           id
           excerpt(pruneLength: 250)
-          frontmatter {
+          fields {
+            slug
             date(formatString: "YYYY.MM.DD")
             last_update(formatString: "YYYY.MM.DD")
-            slug
             title
             description
           }

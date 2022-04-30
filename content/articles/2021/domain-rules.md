@@ -1,7 +1,6 @@
 ---
-slug: /articles/domain-rules
 date: 2021-07-01
-last_update: 2021-07-01
+last_update: 2022-05-01
 title: ドメイン利用に関する規則
 description: 「kss-pc.club」ドメイン利用に関してのルール
 ---
