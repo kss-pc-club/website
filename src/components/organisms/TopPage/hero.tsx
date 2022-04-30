@@ -14,7 +14,7 @@ const Base = styled.section`
   width: 100%;
   height: 100vh;
   padding: 10px 0px;
-  font-size: min(12vw, 6em);
+  font-size: min(11vw, 5.2rem);
   line-height: 1.1em;
 `
 
