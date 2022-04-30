@@ -1,6 +1,6 @@
 ---
 date: 2021-07-01
-last_update: 2021-07-01
+last_update: 2022-05-01
 title: Slackの使い方とルール
 description: Slackの使い方ガイドと、ルールについて説明しています。
 ---

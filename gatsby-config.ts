@@ -53,6 +53,7 @@ const config: GatsbyConfig = {
       options: {
         name: `articles`,
         path: `content/articles`,
+        ignore: [`**/README.md`],
       },
     },
     {
