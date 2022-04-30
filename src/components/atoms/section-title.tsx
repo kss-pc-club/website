@@ -13,7 +13,7 @@ const SectionTitle: React.VFC<SectionTitleProps> = (props) => {
   const Styled = styled.div`
     font-size: 1.35rem;
     color: ${props.subColor || '#212529'};
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     h2 {
       font-size: 0.6em;
       position: relative;
@@ -36,6 +36,8 @@ const SectionTitle: React.VFC<SectionTitleProps> = (props) => {
       position: relative;
       display: inline-block;
       font-weight: 500;
+      font-size: 1.6em;
+      line-height: 1.7;
       padding-bottom: 1rem;
     }
   `

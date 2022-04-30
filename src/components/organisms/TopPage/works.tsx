@@ -3,6 +3,7 @@ import React from 'react'
 import Slider, { Settings } from 'react-slick'
 
 import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 import Container from 'src/components/atoms/container'
@@ -15,7 +16,12 @@ const Content: React.VFC = () => {
     arrows: false,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3500,
+  }
+  const Styled = {
+    SliderItem: styled.div`
+      margin-bottom: 20px;
+    `
   }
   return (
     <section
@@ -29,7 +35,7 @@ const Content: React.VFC = () => {
           Project & Works
         </SectionTitle>
         <Slider {...settings}>
-          <div>
+          <Styled.SliderItem>
             <StaticImage
               src='./../../../images/works/typing.png'
               alt='screenshot'
@@ -37,11 +43,10 @@ const Content: React.VFC = () => {
               layout='constrained'
               height={350}
             />
-            <h3>1</h3>
-          </div>
-          <div>
+          </Styled.SliderItem>
+          <Styled.SliderItem>
             <h3>2</h3>
-          </div>
+          </Styled.SliderItem>
         </Slider>
       </Container>
     </section>
