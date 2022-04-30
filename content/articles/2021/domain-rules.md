@@ -1,5 +1,4 @@
 ---
-slug: /articles/domain-rules
 date: 2021-07-01
 last_update: 2021-07-01
 title: ドメイン利用に関する規則

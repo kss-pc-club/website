@@ -1,5 +1,4 @@
 ---
-slug: /articles/fes-monitor-usage
 date: 2022-04-30
 last_update: 2022-04-30
 title: KSS Fes Monitor の 使い方
@@ -8,13 +7,13 @@ description: 文化祭の待ち時間モニターの使い方を説明します�
 
 ## KSS Fes Monitor って何？
 
-<img src="/images/articles/2022/fes-monitor-usage/using-monitor.png" width="400">
+![using-monitor](./using-monitor.png)
 
 これです。特別棟 1 階の階段前と、本棟 2 階の職員室の前に置いてあったやつ。
 画像は 2019 年度のものですが、用途的には同じです。
 
-<img src="/images/articles/2022/fes-monitor-usage/monitor-image1.png" width="600">
-<img src="/images/articles/2022/fes-monitor-usage/monitor-image2.png" width="600">
+<img src="monitor-image1.png" width="600">
+<img src="monitor-image2.png" width="600">
 
 （画面は開発段階のものであり、変更される場合があります）
 
@@ -39,7 +38,7 @@ Firebase にアクセスできるようになったら、アカウントを作�
 
 1. <p>https://console.firebase.google.com/project/kss-festival-admin/authentication/users にアクセスしてください。</p>
 2. <p>「ユーザーを追加」をクリックします。</p>
-   <p><img src="/images/articles/2022/fes-monitor-usage/firebase-auth1.png" width="600"></p>
+   <p><img src="firebase-auth1.png" width="600"></p>
 3. <p>メールアドレスとパスワードを入力します。
    が、さすがに各クラスの人のメールアドレスを登録させるわけにもいかないので、「fes-g(学年)c(組)@kss-pc.club」としてください。
    部活動の場合、「fes-club-(その部活動を表す文字列)@kss-pc.club」とするとよいでしょう。
@@ -48,7 +47,7 @@ Firebase にアクセスできるようになったら、アカウントを作�
    もし紛失したら、Google Domainsに行ってメールの転送設定を追加するなり、アカウントを削除・再追加するなりしてください。</p>
    <p>例1: 3年2組の場合「fes-g3c2@kss-pc.club」<br>
    例2: 科学部の場合「fes-club-science@kss-pc.club」（適当に考えてください）</p>
-   <p><img src="/images/articles/2022/fes-monitor-usage/firebase-auth2.png" width="600"></p>
+   <p><img src="firebase-auth2.png" width="600"></p>
 
 一応、これでアカウント自体の作成は完了しました。
 
@@ -59,12 +58,12 @@ Firebase にアクセスできるようになったら、アカウントを作�
 3. <p>「コレクションを開始」と書かれている下にいくつかのデータがあります。まずは「chat」をクリックします。</p>
 4. <p>真ん中の部分に「ドキュメントを追加」とあるので、クリックします。</p>
 5. <p>以下のデータに変更し、「保存」します。</p>
-   <p><img src="/images/articles/2022/fes-monitor-usage/firebase-db1.png" width="600"></p>
+   <p><img src="firebase-db1.png" width="600"></p>
 6. <p>次に、「コレクションを開始」の下「class_info」をクリックし、同様に「ドキュメントを追加」をクリックします。</p>
-   <p>内容はこの通りです。<br><img src="/images/articles/2022/fes-monitor-usage/firebase-db2.png" width="600"></p>
+   <p>内容はこの通りです。<br><img src="firebase-db2.png" width="600"></p>
    <p>ちなみに、ここで https://monitor.festival.kss-pc.club/ を開いてみると、新しくデータが追加されていることが確認できます。 </p>
 7. <p>次に、「class_proceeds」をクリックし、同様に「ドキュメントを追加」をクリックします。</p>
-   <p>内容はこの通りです。<br><img src="/images/articles/2022/fes-monitor-usage/firebase-db3.png" width="600"></p>
+   <p>内容はこの通りです。<br><img src="firebase-db3.png" width="600"></p>
 
 管理者権限を持ったあなたのアカウントも作りましょう。<br>
 管理者権限のアカウントには、各模擬店からの質問などがチャットで飛んできます。
@@ -121,7 +120,7 @@ Firebase にアクセスできるようになったら、アカウントを作�
 
 #### 5. メニューアイコンの追加
 
-<img src="/images/articles/2022/fes-monitor-usage/icon-add1.png">
+<img src="icon-add1.png">
 
 「メニューアイコン」は、上の画像のように表示されるものです。
 何が販売中/営業中なのか、もしくは売り切れ/営業終了なのか、などが一目でわかるアイコンが必要です。<br>

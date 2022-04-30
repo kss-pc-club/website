@@ -1,5 +1,4 @@
 ---
-slug: /articles/using-slack
 date: 2021-07-01
 last_update: 2021-07-01
 title: Slackの使い方とルール
@@ -38,13 +37,13 @@ Description: さらに詳細の説明が必要であれば記入。
 【スレッド機能とダイレクト投稿】<br>
 
 - スレッド<br>
-  ![](/images/articles/2021/using-slack/01.png) をクリック<br>
+  ![](01.png) をクリック<br>
   ↓<br>
-  ![](/images/articles/2021/using-slack/02.png)<br>
+  ![](02.png)<br>
   （※`Also send to #○○` が表示されている）
 
 - ダイレクト<br>
-  ![](/images/articles/2021/using-slack/03.png)<br>
+  ![](03.png)<br>
   （※`Also send to #○○` が表示されていない）
 
 【文節区切り】<br>

@@ -1,5 +1,4 @@
 ---
-slug: /articles/test
 date: 2021-06-30
 last_update: 2021-06-30
 title: Test Article
