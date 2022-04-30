@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Slider, { Settings } from 'react-slick'
 
@@ -29,22 +30,17 @@ const Content: React.VFC = () => {
         </SectionTitle>
         <Slider {...settings}>
           <div>
+            <StaticImage
+              src='./../../../images/works/typing.png'
+              alt='screenshot'
+              placeholder='blurred'
+              layout='constrained'
+              height={350}
+            />
             <h3>1</h3>
           </div>
           <div>
             <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
           </div>
         </Slider>
       </Container>
