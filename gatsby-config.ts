@@ -39,13 +39,18 @@ const config: GatsbyConfig = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-root-import`,
-    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        typeName: `Json`,
+      },
+    },
     // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `achievements`,
-        path: `content/achievements`,
+        name: `data`,
+        path: `content/data`,
       },
     },
     {
