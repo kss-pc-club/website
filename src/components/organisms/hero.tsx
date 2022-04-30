@@ -1,7 +1,7 @@
 import React from 'react'
 
-import styled from '@emotion/styled'
 import ScrollButton from '@components/molecules/scroll-button'
+import styled from '@emotion/styled'
 
 const Base = styled.div`
   position: relative;
