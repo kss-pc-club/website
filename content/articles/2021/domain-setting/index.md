@@ -1,6 +1,6 @@
 ---
 date: 2021-07-01
-last_update: 2021-07-01
+last_update: 2022-05-01
 title: Tips - 独自ドメイン設定方法
 description: プロジェクトなどで、GitHubリポジトリに独自ドメインを設定する方法を紹介しています。
 ---
