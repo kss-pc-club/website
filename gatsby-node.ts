@@ -17,7 +17,6 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = async ({
     node.frontmatter.description,
     node.excerpt,
   ]
-  console.log(slug)
   createNodeField({ name: `slug`, node, value: slug })
   createNodeField({ name: `title`, node, value: title })
   createNodeField({ name: `date`, node, value: date })
