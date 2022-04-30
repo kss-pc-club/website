@@ -2,9 +2,9 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import { Breadcrumb, Card } from 'react-bootstrap'
 
-import Layout from '@components/layout'
-import * as Styles from '@styles/pages/articles/index.module.scss'
-import SEO from '@utils/seo'
+import Layout from 'src/components/layout'
+import * as Styles from 'src/styles/pages/articles/index.module.scss'
+import SEO from 'src/utils/seo'
 
 const PostLink = ({ post }: any) => (
   <Card className={Styles.card}>

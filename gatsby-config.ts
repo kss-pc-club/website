@@ -21,6 +21,7 @@ const siteMetadata = {
   basePath: `/`,
   social: {
     github: `kss-pc-club`,
+    youtube: `UC60LrAyqIHUkqCmzhN2N4Rg`,
   },
 }
 
@@ -30,8 +31,10 @@ const config: GatsbyConfig = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-catch-links`,
@@ -50,19 +53,6 @@ const config: GatsbyConfig = {
         plugins: [`gatsby-remark-prismjs`, `gatsby-remark-external-links`],
       },
     },
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '@src': 'src',
-          '@components': 'src/components',
-          '@pages': 'src/pages',
-          '@styles': 'src/styles',
-          '@utils': 'src/utils',
-        },
-        extensions: ['js', 'jsx', 'ts', 'tsx'],
-      },
-    },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
@@ -78,25 +68,11 @@ const config: GatsbyConfig = {
         name: siteTitle,
         short_name: siteTitle,
         description: siteDescription,
-        Scope: `/`,
         start_url: `/?utm_source=homescreen`,
         background_color: backgroundColor,
         theme_color: themeColor,
         display: `minimal-ui`,
         icon: siteFavicon,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        sassOptions: {
-          outputStyle: 'compressed',
-        },
-        cssLoaderOptions: {
-          camelCase: false,
-        },
-        sassRuleTest: /\.global\.s(a|c)ss$/,
-        sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
   ],

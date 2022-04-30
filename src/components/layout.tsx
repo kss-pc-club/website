@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Footer from '@components/organisms/footer'
-import Header from '@components/organisms/header'
+import Footer from 'src/components/organisms/footer'
+import Header from 'src/components/organisms/header'
 import 'src/styles/components/layout.global.scss'
 
 const Layout: React.FC<any> = (Props) => {
