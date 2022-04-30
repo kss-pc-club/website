@@ -6536,16 +6536,16 @@ gatsby-sharp@^0.3.0:
     "@types/sharp" "^0.29.5"
     sharp "^0.30.1"
 
-gatsby-source-filesystem@^4.9.1:
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.9.1.tgz#e619d8a482b0477c28225ffce9c28cbb0606ce67"
-  integrity sha512-2HS9+5i+F7tRgxBiv8Op9xK/jvd5DGUfedFsJ6/6sfoXUBddowvW4rVEj4XO42TsIQJe7eVj7FfzfqzSqQN8ow==
+gatsby-source-filesystem@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.13.0.tgz#b42bffeaa7d157988d01c95fcf2feed60f6f0001"
+  integrity sha512-PRr/6tWY5BtnfVv67JSWvQTorfWteWBxzbcs7DvgoP7zHfIWR1tH6saONwuPbo9tCwQ73ZlLYz1LgGdOfJGPzA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     chokidar "^3.5.2"
     file-type "^16.5.3"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.9.1"
+    gatsby-core-utils "^3.13.0"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.5.2"
@@ -6572,6 +6572,14 @@ gatsby-telemetry@^3.9.1:
     is-docker "^2.2.1"
     lodash "^4.17.21"
     node-fetch "^2.6.7"
+
+gatsby-transformer-json@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-4.13.0.tgz#5f58149ed7b70f68e13e374fca2b226c2d2c594f"
+  integrity sha512-mLrfn+t5XWqCIN8GG1YPEMR4AL0KuvK1UGBWuUkgnWME2YAMBjK9Ar9C1o6Caly1U4piXLdlk+9s6lIBb14bbQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    bluebird "^3.7.2"
 
 gatsby-transformer-remark@^5.9.1:
   version "5.9.1"
