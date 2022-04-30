@@ -44,7 +44,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
+        name: `achievements`,
         path: `content/achievements`,
       },
     },
@@ -58,7 +58,22 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-external-links`],
+        plugins: [
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-external-links`,
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 650,
+              quality: 90,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+          `gatsby-remark-katex`,
+        ],
       },
     },
     `gatsby-plugin-advanced-sitemap`,
