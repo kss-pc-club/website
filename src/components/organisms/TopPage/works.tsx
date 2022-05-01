@@ -38,14 +38,29 @@ const Content: React.VFC = () => {
           <Styled.SliderItem>
             <StaticImage
               src='./../../../images/works/typing.png'
-              alt='screenshot'
+              alt='typing'
               placeholder='blurred'
               layout='constrained'
               height={350}
             />
           </Styled.SliderItem>
           <Styled.SliderItem>
-            <h3>2</h3>
+            <StaticImage
+              src='./../../../images/works/monitor.png'
+              alt='monitor'
+              placeholder='blurred'
+              layout='constrained'
+              height={350}
+            />
+          </Styled.SliderItem>
+          <Styled.SliderItem>
+            <StaticImage
+              src='./../../../images/works/discord-bot.png'
+              alt='discord-bot'
+              placeholder='blurred'
+              layout='constrained'
+              height={350}
+            />
           </Styled.SliderItem>
         </Slider>
       </Container>
