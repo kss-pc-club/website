@@ -62,7 +62,7 @@ Firebase にアクセスできるようになったら、アカウントを作�
 5. <p>以下のデータに変更し、「保存」します。</p>
    <p><img src="firebase-db1.png" width="600"></p>
 6. <p>次に、「コレクションを開始」の下「class_info」をクリックし、同様に「ドキュメントを追加」をクリックします。<br>もし「class_info」がなければ、「コレクションを開始」を押して、「コレクションID」に「class_info」と入力して「次へ」を押すと同じ画面に移ります。</p>
-   <p>内容はこの通りです。<br><img src="/images/articles/2022/fes-monitor-usage/firebase-db2.png" width="600"></p>
+   <p>内容はこの通りです。<br><img src="firebase-db2.png" width="600"></p>
    <p>ちなみに、ここで https://monitor.festival.kss-pc.club/ を開いてみると、新しくデータが追加されていることが確認できます。 </p>
 7. <p>次に、「class_proceeds」をクリックし、同様に「ドキュメントを追加」をクリックします。</p>
    <p>内容はこの通りです。<br><img src="firebase-db3.png" width="600"></p>
