@@ -22,7 +22,7 @@ interface Query {
 const Content: React.VFC = () => {
   // 直近 6 件
   const data = useStaticQuery<Query>(graphql`
-    query MyQuery {
+    query TopAchivementQuery {
       allJson(limit: 6, sort: {order: DESC, fields: date}) {
         edges {
           node {
