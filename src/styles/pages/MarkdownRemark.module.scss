@@ -1,6 +1,10 @@
 .main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 10px 4vw;
+
   p#date {
-    text-align: right;
+    text-align: left;
   }
 
   p#description {
@@ -11,8 +15,21 @@
     margin-right: 8px;
   }
 
+  span.post_date_tag {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    background-color: #1b5bd7;
+    color: white;
+    font-size: 0.9em;
+  }
+
+  span.post_date {
+    margin-left: 0.7em;
+    font-size: 0.9em;
+  }
+
   .article {
-    max-width: 100%;
     overflow-wrap: break-word;
 
     h1,

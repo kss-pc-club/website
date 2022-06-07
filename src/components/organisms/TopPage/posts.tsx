@@ -1,36 +1,39 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 
-import Container from 'src/components/atoms/container'
-import SectionTitle from 'src/components/atoms/section-title'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
-import { graphql, useStaticQuery } from "gatsby"
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Anchor from 'src/components/atoms/anchor'
+import Container from 'src/components/atoms/container'
+import SectionTitle from 'src/components/atoms/section-title'
 
 interface Query {
   allMarkdownRemark: {
     edges: [
       {
         node: {
-          id: string;
+          id: string
           fields: {
-            date: string;
-            title: string;
-            slug: string;
+            date: string
+            title: string
+            slug: string
           }
-        };
+        }
       }
-    ];
-  };
+    ]
+  }
 }
 
 const Content: React.VFC = () => {
   // 直近 6 件
   const data = useStaticQuery<Query>(graphql`
     query TopPostQuery {
-      allMarkdownRemark(limit: 6, sort: {order: DESC, fields: fields___date}) {
+      allMarkdownRemark(
+        limit: 6
+        sort: { order: DESC, fields: fields___date }
+      ) {
         edges {
           node {
             id
@@ -44,10 +47,9 @@ const Content: React.VFC = () => {
       }
     }
   `)
-  
+
   const Styled = {
-    List: styled.ul`
-    `,
+    List: styled.ul``,
     ListItem: styled.li`
       margin-bottom: 4px;
       background-color: white;
@@ -79,9 +81,9 @@ const Content: React.VFC = () => {
               font-size: 0.9em;
             }
             .post-date {
-              font-size: 0.80em;
+              font-size: 0.8em;
               margin-left: 1.2em;
-              padding-left: 1.0em;
+              padding-left: 1em;
               border-left: 1px solid #212529;
             }
             .post-title {
@@ -90,13 +92,18 @@ const Content: React.VFC = () => {
           }
         }
       }
-    `
-  };
+    `,
+  }
 
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <section id='posts' css={css`background: #e9eef5;`}>
+    <section
+      id='posts'
+      css={css`
+        background: #e9eef5;
+      `}
+    >
       <Container padding='120px 4vw' align='center'>
         <SectionTitle subTitle='最近の投稿'>Recent Post</SectionTitle>
         <Styled.List className='alt'>
@@ -114,10 +121,15 @@ const Content: React.VFC = () => {
                     </div>
                     <div className='post-title'>{title}</div>
                   </div>
-                  <FontAwesomeIcon icon={faAngleRight} css={css`font-size: 120%;`}/>
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    css={css`
+                      font-size: 120%;
+                    `}
+                  />
                 </Anchor>
               </Styled.ListItem>
-            );
+            )
           })}
         </Styled.List>
       </Container>
