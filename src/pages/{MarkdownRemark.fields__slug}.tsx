@@ -1,9 +1,10 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
-import { Breadcrumb, Container } from 'react-bootstrap'
+import { Breadcrumb } from 'react-bootstrap'
 
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import 'prismjs/themes/prism.css'
+import Container from 'src/components/atoms/container'
 import Layout from 'src/components/layout'
 import * as Styles from 'src/styles/pages/MarkdownRemark.module.scss'
 import SEO from 'src/utils/seo'
