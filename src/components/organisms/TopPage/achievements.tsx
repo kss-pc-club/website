@@ -1,29 +1,29 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
-import { graphql, useStaticQuery } from "gatsby"
 
+import styled from '@emotion/styled'
 import Container from 'src/components/atoms/container'
 import SectionTitle from 'src/components/atoms/section-title'
-import styled from '@emotion/styled'
 
 interface Query {
   allJson: {
     edges: [
       {
         node: {
-          id: string;
-          date: string;
-          title: string;
-        };
+          id: string
+          date: string
+          title: string
+        }
       }
-    ];
-  };
+    ]
+  }
 }
 
 const Content: React.VFC = () => {
   // 直近 6 件
   const data = useStaticQuery<Query>(graphql`
     query TopAchivementQuery {
-      allJson(limit: 6, sort: {order: DESC, fields: date}) {
+      allJson(limit: 6, sort: { order: DESC, fields: date }) {
         edges {
           node {
             id
@@ -62,7 +62,7 @@ const Content: React.VFC = () => {
         margin-bottom: 10px;
       }
     `,
-  };
+  }
 
   const achievements = data.allJson.edges
 
@@ -80,7 +80,7 @@ const Content: React.VFC = () => {
                   <span>{date}</span>
                   <p>{title}</p>
                 </li>
-              );
+              )
             })}
             <li>
               <span>...</span>

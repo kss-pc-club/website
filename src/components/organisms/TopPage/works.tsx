@@ -21,7 +21,7 @@ const Content: React.VFC = () => {
   const Styled = {
     SliderItem: styled.div`
       margin-bottom: 20px;
-    `
+    `,
   }
   return (
     <section
