@@ -18,7 +18,7 @@ const Base = styled.section`
   line-height: 1.1em;
 `
 
-const Hero: React.VFC = () => (
+const Hero: React.FC = () => (
   <React.Fragment>
     <Base>
       <div>
