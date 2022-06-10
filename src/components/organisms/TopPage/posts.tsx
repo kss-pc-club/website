@@ -26,7 +26,7 @@ interface Query {
   }
 }
 
-const Content: React.VFC = () => {
+const Content: React.FC = () => {
   // 直近 6 件
   const data = useStaticQuery<Query>(graphql`
     query TopPostQuery {

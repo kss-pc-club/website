@@ -9,7 +9,7 @@ import 'slick-carousel/slick/slick.css'
 import Container from 'src/components/atoms/container'
 import SectionTitle from 'src/components/atoms/section-title'
 
-const Content: React.VFC = () => {
+const Content: React.FC = () => {
   const settings: Settings = {
     dots: true,
     infinite: true,
