@@ -10,13 +10,19 @@ import Join from 'src/components/organisms/TopPage/join'
 import Posts from 'src/components/organisms/TopPage/posts'
 import Works from 'src/components/organisms/TopPage/works'
 import SEO from 'src/utils/seo'
+import { css } from '@emotion/react'
+import { Color } from 'src/utils/color'
 
 const RootIndex_page: React.FC<PageProps> = ({ location }) => (
   <React.Fragment>
     <Layout location={location}>
       <SEO title='Top' />
-      <div>
-        <Hero />
+      <Hero />
+      <div css={css`
+        > section:nth-child(even) {
+          background-color: ${Color.UI.backgroundAccent};
+        }
+      `}>
         <About />
         <Works />
         <Achievements />
