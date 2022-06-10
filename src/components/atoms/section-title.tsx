@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
+import { Color } from 'src/utils/color'
 
 type SectionTitleProps = {
   subTitle: string
@@ -9,10 +10,10 @@ type SectionTitleProps = {
   children?: React.ReactNode
 }
 
-const SectionTitle: React.VFC<SectionTitleProps> = (props) => {
+const SectionTitle: React.FC<SectionTitleProps> = (props) => {
   const Styled = styled.div`
     font-size: 1.35rem;
-    color: ${props.subColor || '#212529'};
+    color: ${props.subColor || Color.UI.textPrimary};
     margin-bottom: 1.2rem;
     h2 {
       font-size: 0.6em;
@@ -28,11 +29,11 @@ const SectionTitle: React.VFC<SectionTitleProps> = (props) => {
         left: calc(50% - ${40 / 2}px);
         width: ${40}px;
         height: 2px;
-        background: ${props.subColor || '#212529'};
+        background: ${props.subColor || Color.UI.textPrimary};
       }
     }
     h1 {
-      color: ${props.color || '#113e96'};
+      color: ${props.color || Color.UI.textAccent};
       position: relative;
       display: inline-block;
       font-weight: 500;

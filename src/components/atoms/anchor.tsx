@@ -12,7 +12,7 @@ type AnchorProps = {
   children?: React.ReactNode
 }
 
-const Anchor: React.VFC<AnchorProps> = (props) => {
+const Anchor: React.FC<AnchorProps> = (props) => {
   const isExternal =
     props.to.startsWith('http://') || props.to.startsWith('https://')
   return (
