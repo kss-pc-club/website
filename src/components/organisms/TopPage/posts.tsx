@@ -98,12 +98,7 @@ const Content: React.FC = () => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <section
-      id='posts'
-      css={css`
-        background: #e9eef5;
-      `}
-    >
+    <section id='posts'>
       <Container padding='120px 4vw' align='center'>
         <SectionTitle subTitle='最近の投稿'>Recent Post</SectionTitle>
         <Styled.List className='alt'>
